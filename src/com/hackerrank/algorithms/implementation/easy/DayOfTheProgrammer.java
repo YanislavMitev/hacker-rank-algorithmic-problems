@@ -24,10 +24,12 @@ public class DayOfTheProgrammer {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        int year = sc.nextInt();
+        int year = scanner.nextInt();
 
         System.out.println(dayOfProgrammer(year));
+
+        scanner.close();
     }
 }

@@ -41,5 +41,7 @@ public class BillDivision {
         int moneyAnnaToBeCharged = scanner.nextInt();
 
         bonAppetit(bill, annaDoesNotEat, moneyAnnaToBeCharged);
+
+        scanner.close();
     }
 }

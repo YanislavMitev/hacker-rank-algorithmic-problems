@@ -36,15 +36,17 @@ public class GradingStudents {
 
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int gradesCount = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int gradesCount = scanner.nextInt();
 
         List<Integer> grades = new ArrayList<>();
         while (gradesCount-- > 0) {
-            grades.add(sc.nextInt());
+            grades.add(scanner.nextInt());
         }
 
         List<Integer> result = GradingStudents.gradingStudents(grades);
         result.forEach(System.out::println);
+
+        scanner.close();
     }
 }

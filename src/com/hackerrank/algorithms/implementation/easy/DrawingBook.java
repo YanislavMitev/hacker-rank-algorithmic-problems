@@ -40,5 +40,7 @@ public class DrawingBook {
         int page = scanner.nextInt();
 
         System.out.println(pageCount(numberOfPages, page));
+
+        scanner.close();
     }
 }
