@@ -9,8 +9,6 @@ import java.util.Scanner;
  * </a>
  */
 public class JumpingOnTheClouds {
-    private static final Scanner scanner = new Scanner(System.in);
-
     static int jumpingOnClouds(int[] c, int k) {
         int energy = 100;
         boolean looped = false;
@@ -44,6 +42,8 @@ public class JumpingOnTheClouds {
     }
 
     public static void main(String[] args) throws IOException {
+        Scanner scanner = new Scanner(System.in);
+
         int n = scanner.nextInt();
 
         int k = scanner.nextInt();
@@ -58,5 +58,4 @@ public class JumpingOnTheClouds {
 
         scanner.close();
     }
-
 }
